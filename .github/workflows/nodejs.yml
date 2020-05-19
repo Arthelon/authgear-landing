@@ -3,12 +3,11 @@ name: auth-landing CI
 on: [push, pull_request]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [12.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -23,13 +22,19 @@ jobs:
         run: npm run lint
       - name: Generate production build
         run: npm run export
+  deploy-master:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    needs: test
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
       - name: Add SSH client
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         uses: webfactory/ssh-agent@v0.2.0
         with:
           ssh-private-key: ${{ secrets.DEPLOY_KEY }}
       - name: Deploy
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           SSH: true
