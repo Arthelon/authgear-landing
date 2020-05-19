@@ -1,5 +1,6 @@
 <script>
   import Nav from "../components/Nav.svelte";
+  import GlobalCSS from "../components/GlobalCSS.svelte"; //eslint-disable-line
 
   export let segment;
 </script>
