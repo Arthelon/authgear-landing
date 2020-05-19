@@ -1,4 +1,3 @@
 <svelte:head>
-	<title>About</title>
+  <title>About</title>
 </svelte:head>
-
