@@ -27,3 +27,9 @@ jobs:
         run: npm run lint
       - name: Generate production build
         run: npm run export
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: staging
+          FOLDER: __sapper__/export
