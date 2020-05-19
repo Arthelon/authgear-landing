@@ -22,7 +22,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - name: Format code
-        run: npm run format
+        run: npm run check-format
       - name: Lint svelte files
         run: npm run lint
       - name: Generate production build
