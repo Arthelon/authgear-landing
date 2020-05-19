@@ -14,5 +14,6 @@ npm install
 
 To run a local development server, use `npm run dev`
 
-To generate a production build, use `npm run build` which will output to the `__sapper__/build` folder.
+To generate a production build, use `npm run export` which will output to the `__sapper__/export` folder.
 
+**Note**: `npm run build` generates a production node server while `npm run export` generates the production static build
