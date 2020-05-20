@@ -31,7 +31,7 @@
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: #000;
+    background: hsl(0, 0%, 66.7%);
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
@@ -64,7 +64,7 @@
   #mobile-menu input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(1px, 1px);
-    background: #232323;
+    background: hsl(0, 0%, 66.7%);
   }
 
   #mobile-menu input:checked ~ span:nth-last-child(3) {

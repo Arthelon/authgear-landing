@@ -10,7 +10,7 @@
     width: 100%;
     padding: 12px 0;
     background-color: #fff;
-    border-bottom: 1px solid hsla(0, 0%, 86%, 0.4);
+    border-bottom: 1px solid hsl(0, 0%, 66.7%);
     z-index: 1;
   }
 
