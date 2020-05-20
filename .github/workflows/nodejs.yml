@@ -44,4 +44,4 @@ jobs:
         with:
           SSH: true
           BRANCH: gh-pages
-          FOLDER: __sapper__/export/${{ env.BASE_PATH }}
+          FOLDER: __sapper__/export${{ env.BASE_PATH }}
