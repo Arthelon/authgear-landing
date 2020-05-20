@@ -1,6 +1,7 @@
 <script>
   import Nav from "../components/Nav.svelte";
-  import GlobalCSS from "../components/GlobalCSS.svelte"; //eslint-disable-line
+  // Following error is disabled sinec we are importing GlobalCSS component solely to include global styles
+  import GlobalCSS from "../components/GlobalCSS.svelte"; // eslint-disable-line no-unused-vars
 
   export let segment;
 </script>
