@@ -22,6 +22,8 @@ jobs:
   deploy-master:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     needs: test
+    env:
+      BASE_PATH: /auth-landing
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -32,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Generate production build
-        run: npm run export
+        run: npm run export -- --basepath=$BASE_PATH
       - name: Add SSH client
         uses: webfactory/ssh-agent@v0.2.0
         with:
@@ -42,4 +44,4 @@ jobs:
         with:
           SSH: true
           BRANCH: gh-pages
-          FOLDER: __sapper__/export
+          FOLDER: __sapper__/export${{ env.BASE_PATH }}
