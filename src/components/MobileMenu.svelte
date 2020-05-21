@@ -20,7 +20,6 @@
     z-index: 2;
     cursor: pointer;
 
-    -webkit-user-select: none;
     user-select: none;
   }
 
@@ -83,7 +82,6 @@
     padding-top: 125px;
     background: hsla(0, 0%, 100%, 0.95);
     list-style-type: none;
-    -webkit-font-smoothing: antialiased;
     border-right: 1px solid #e8e8e8;
     min-height: calc(100vh + 100px);
     transform-origin: 0 0;
