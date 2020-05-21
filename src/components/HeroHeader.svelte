@@ -13,7 +13,7 @@
     max-width: 1200px;
   }
 
-  img {
+  .hero-img {
     max-width: 100%;
     height: auto;
   }
@@ -65,7 +65,7 @@
         <ContactForm />
       </div>
       <div class="col-12 col-md-7">
-        <img src="hero-header-img.png" alt="Hero Header" />
+        <img class="hero-img" src="hero-header-img.png" alt="Hero Header" />
       </div>
     </div>
   </div>
