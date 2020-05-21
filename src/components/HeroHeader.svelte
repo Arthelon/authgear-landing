@@ -10,7 +10,7 @@
   }
 
   .container-fluid {
-    max-width: 75rem;
+    max-width: 1200px;
   }
 
   img {
@@ -30,8 +30,8 @@
 
   @media screen and (min-width: 768px) {
     .container-fluid {
-      padding-right: 3.5rem;
-      padding-left: 3.5rem;
+      padding-right: 56px;
+      padding-left: 56px;
     }
 
     .tagline h1 {
@@ -42,8 +42,8 @@
 
   @media screen and (max-width: 768px) {
     .container-fluid {
-      padding-right: 1.8rem;
-      padding-left: 1.8rem;
+      padding-right: 18px;
+      padding-left: 18px;
     }
 
     .tagline h1 {
