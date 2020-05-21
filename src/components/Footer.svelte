@@ -9,7 +9,7 @@
   }
 
   .container-fluid {
-    max-width: 75rem;
+    max-width: 1200px;
   }
 
   img {
@@ -41,8 +41,8 @@
 
   @media screen and (min-width: 768px) {
     .container-fluid {
-      padding-right: 2.8rem;
-      padding-left: 2.8rem;
+      padding-right: 45px;
+      padding-left: 45px;
     }
     .copyright {
       text-align: right;
@@ -51,8 +51,8 @@
 
   @media screen and (max-width: 768px) {
     .container-fluid {
-      padding-right: 1.8rem;
-      padding-left: 1.8rem;
+      padding-right: 21px;
+      padding-left: 21px;
     }
 
     .copyright {
