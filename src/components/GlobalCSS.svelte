@@ -17,7 +17,7 @@
   }
 
   :root {
-    --content-max-width: 75rem;
+    --content-max-width: 1200px;
 
     /* colors */
     --primary: #2275f4;

@@ -60,32 +60,32 @@
 
   @media screen and (min-width: 992px) {
     .container-fluid {
-      padding-right: 3.5rem;
-      padding-left: 3.5rem;
+      padding-right: 56px;
+      padding-left: 56px;
     }
 
     li a {
       font-size: 14px;
-      padding: 0.5rem 0.7rem;
+      padding: 8px 11px;
     }
   }
 
   @media screen and (min-width: 768px) and (max-width: 992px) {
     .container-fluid {
-      padding-right: 2.8rem;
-      padding-left: 2.8rem;
+      padding-right: 45px;
+      padding-left: 45px;
     }
 
     li a {
       font-size: 11px;
-      padding: 0.5rem 0.3rem;
+      padding: 8px 5px;
     }
   }
 
   @media screen and (max-width: 768px) {
     .container-fluid {
-      padding-right: 2.8rem;
-      padding-left: 2.8rem;
+      padding-right: 45px;
+      padding-left: 45px;
     }
 
     nav li:not(.action-item) {
