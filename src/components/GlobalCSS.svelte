@@ -12,6 +12,10 @@
     color: #000;
   }
 
+  a {
+    cursor: pointer;
+  }
+
   :root {
     --content-max-width: 75rem;
 

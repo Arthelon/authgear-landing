@@ -5,7 +5,6 @@
 
   li a {
     color: var(--primary);
-    cursor: pointer;
     font-weight: 500;
   }
 

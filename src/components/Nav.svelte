@@ -35,7 +35,6 @@
 
   li a {
     color: var(--primary);
-    cursor: pointer;
     font-weight: 500;
   }
 
@@ -48,9 +47,6 @@
     align-items: center;
   }
 
-  .logo-wrapper a {
-    cursor: pointer;
-  }
   .container-fluid {
     max-width: var(--content-max-width);
   }
