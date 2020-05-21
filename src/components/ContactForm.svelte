@@ -13,6 +13,7 @@
     outline: none;
     border: none;
     border-bottom: 1px solid #979797;
+    padding-bottom: 5px;
   }
 
   .contact-wrapper .submit-btn {

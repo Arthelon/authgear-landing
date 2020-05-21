@@ -3,9 +3,8 @@
 </script>
 
 <style>
-  section {
+  .hero-section {
     background-color: #fff;
-    padding: 164px 0 144px 0;
     color: #000;
   }
 
@@ -29,6 +28,10 @@
   }
 
   @media screen and (min-width: 768px) {
+    .hero-section {
+      padding: 164px 0 144px 0;
+    }
+
     .container-fluid {
       padding-right: 56px;
       padding-left: 56px;
@@ -41,6 +44,10 @@
   }
 
   @media screen and (max-width: 768px) {
+    .hero-section {
+      padding: 85px 0 40px 0;
+    }
+
     .container-fluid {
       padding-right: 18px;
       padding-left: 18px;
@@ -53,7 +60,7 @@
   }
 </style>
 
-<section>
+<section class="hero-section">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-5 t tagline">
