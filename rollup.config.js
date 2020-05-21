@@ -7,6 +7,7 @@ import { terser } from "rollup-plugin-terser";
 import sveltePreprocess from "svelte-preprocess";
 import postcssImport from "postcss-import";
 import autoprefixer from "autoprefixer";
+import postcssFlexbugsFixes from "postcss-flexbugs-fixes";
 import config from "sapper/config/rollup.js";
 import pkg from "./package.json";
 
@@ -16,7 +17,7 @@ const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
 const preprocess = sveltePreprocess({
   postcss: {
-    plugins: [autoprefixer, postcssImport],
+    plugins: [autoprefixer, postcssFlexbugsFixes, postcssImport],
   },
 });
 

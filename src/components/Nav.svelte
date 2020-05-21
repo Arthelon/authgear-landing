@@ -1,75 +1,151 @@
 <script>
-  export let segment;
+  import MobileMenu from "./MobileMenu.svelte";
 </script>
 
 <style>
-  nav {
-    border-bottom: 1px solid rgba(255, 62, 0, 0.1);
-    font-weight: 300;
-    padding: 0 1em;
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #fff;
+    border-bottom: 1px solid hsl(0, 0%, 66.7%);
+    z-index: 1;
   }
 
-  ul {
-    margin: 0;
+  .logo-wrapper img {
+    height: auto;
+    width: 170px;
+    border: 0;
+    vertical-align: middle;
+  }
+
+  .links-wrapper ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     padding: 0;
   }
 
-  /* clearfix */
-  ul::after {
-    content: "";
-    display: block;
-    clear: both;
+  .links-wrapper li {
+    list-style: none;
   }
 
-  li {
-    display: block;
-    float: left;
+  .links-wrapper li a {
+    color: #2275f4;
+    font-weight: 500;
   }
 
-  [aria-current] {
-    position: relative;
-    display: inline-block;
+  .links-wrapper li a:hover {
+    color: #75a8f6;
   }
 
-  [aria-current]::after {
-    position: absolute;
-    content: "";
-    width: calc(100% - 1em);
-    height: 2px;
-    background-color: rgb(255, 62, 0);
-    display: block;
-    bottom: -1px;
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
   }
 
-  a {
-    text-decoration: none;
-    padding: 1em 0.5em;
-    display: block;
+  .container-fluid {
+    max-width: 1200px;
+  }
+
+  .action-item a {
+    padding: 10px 23px;
+    box-shadow: 0 2px 7px hsla(0, 0%, 0%, 0.5);
+    background-color: #fff;
+    margin-left: 20px;
+  }
+
+  @media screen and (min-width: 992px) {
+    .container-fluid {
+      padding-right: 56px;
+      padding-left: 56px;
+    }
+
+    li a {
+      font-size: 14px;
+      padding: 8px 11px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .container-fluid {
+      padding-right: 45px;
+      padding-left: 45px;
+    }
+
+    li a {
+      font-size: 12px;
+      padding: 8px 5px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .container-fluid {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    .action-item a {
+      font-size: 12px;
+      padding: 5px 18px;
+      margin-left: 0;
+    }
+
+    header {
+      padding: 0;
+    }
+
+    .logo-wrapper img {
+      width: 110px;
+      height: auto;
+    }
+
+    .logo-wrapper a {
+      margin-left: 20px;
+    }
+
+    nav li:not(.action-item) {
+      display: none;
+    }
   }
 </style>
 
-<nav>
-  <ul>
-    <li>
-      <a aria-current={segment === undefined ? 'page' : undefined} href=".">
-        home
-      </a>
-    </li>
-    <li>
-      <a aria-current={segment === 'about' ? 'page' : undefined} href="about">
-        about
-      </a>
-    </li>
-
-    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-    <li>
-      <a
-        rel="prefetch"
-        aria-current={segment === 'blog' ? 'page' : undefined}
-        href="blog">
-        blog
-      </a>
-    </li>
-  </ul>
-</nav>
+<header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="logo-wrapper col-6 col-sm-6 col-md-3">
+        <a href="/">
+          <img src="header-logo.png" alt="Skygear Auth Logo" />
+        </a>
+      </div>
+      <div class="links-wrapper col-6 col-sm-6 col-md-9">
+        <nav>
+          <ul>
+            <li>
+              <a>Features</a>
+            </li>
+            <li>
+              <a>Comparison</a>
+            </li>
+            <li>
+              <a>Documentation</a>
+            </li>
+            <li>
+              <a>Pricing</a>
+            </li>
+            <li>
+              <a>Open Sources</a>
+            </li>
+            <li class="action-item">
+              <a>Talk to Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<MobileMenu />
