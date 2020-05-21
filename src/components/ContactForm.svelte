@@ -19,10 +19,9 @@
   .contact-wrapper button {
     color: #fff;
     cursor: pointer;
-    height: fit-content;
-    width: fit-content;
     padding: 10px 24px;
     background: #166ff7;
+    max-width: 120px;
     outline: none;
     border: none;
     border-radius: 2px;
