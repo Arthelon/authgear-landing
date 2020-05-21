@@ -14,7 +14,11 @@
 
   .hero-img {
     max-width: 100%;
-    height: auto;
+  }
+
+  .hero-img-wrapper {
+    display: flex;
+    justify-content: flex-end;
   }
 
   .tagline h1 {
@@ -32,6 +36,10 @@
   @media screen and (min-width: 768px) {
     .hero-section {
       padding: 164px 0 144px 0;
+    }
+
+    .hero-img {
+      max-height: 305px;
     }
 
     .container-fluid {
@@ -52,6 +60,10 @@
   @media screen and (max-width: 768px) {
     .hero-section {
       padding: 85px 0 40px 0;
+    }
+
+    .hero-img {
+      height: auto;
     }
 
     .container-fluid {
@@ -81,7 +93,7 @@
         </p>
         <ContactForm />
       </div>
-      <div class="col-12 col-md-7">
+      <div class="hero-img-wrapper col-12 col-md-7">
         <img class="hero-img" src="hero-header-img.png" alt="Hero Header" />
       </div>
     </div>
