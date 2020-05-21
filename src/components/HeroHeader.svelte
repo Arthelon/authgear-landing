@@ -19,12 +19,14 @@
 
   .tagline h1 {
     font-weight: 900;
+    line-height: 1.4;
   }
 
   .tagline p {
+    margin-top: 0;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 52px;
+    line-height: 1.5;
   }
 
   @media screen and (min-width: 768px) {
@@ -41,6 +43,10 @@
       margin-bottom: 16px;
       font-size: 42px;
     }
+
+    .tagline p {
+      margin-bottom: 52px;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -56,6 +62,10 @@
     .tagline h1 {
       margin-bottom: 7px;
       font-size: 28px;
+    }
+
+    .tagline p {
+      margin-bottom: 30px;
     }
   }
 </style>

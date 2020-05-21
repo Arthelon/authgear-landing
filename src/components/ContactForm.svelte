@@ -11,9 +11,10 @@
 
   .contact-wrapper .email-input {
     outline: none;
+    font-size: 18px;
     border: none;
     border-bottom: 1px solid #979797;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
 
   .contact-wrapper .submit-btn {
@@ -24,12 +25,11 @@
     max-width: 120px;
     outline: none;
     border: none;
-    border-radius: 2px;
     box-shadow: 0 2px 7px hsla(0, 0%, 0%, 0.5);
   }
 
   .contact-wrapper .submit-btn:hover {
-    color: #1468a0;
+    color: #75a8f6;
   }
 
   @media screen and (min-width: 768px) {
