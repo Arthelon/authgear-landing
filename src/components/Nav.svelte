@@ -77,15 +77,34 @@
     }
 
     li a {
-      font-size: 11px;
+      font-size: 12px;
       padding: 8px 5px;
     }
   }
 
   @media screen and (max-width: 768px) {
     .container-fluid {
-      padding-right: 45px;
-      padding-left: 45px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    .action-item a {
+      font-size: 12px;
+      padding: 5px 18px;
+      margin-left: 0;
+    }
+
+    header {
+      padding: 0;
+    }
+
+    .logo-wrapper img {
+      width: 110px;
+      height: auto;
+    }
+
+    .logo-wrapper a {
+      margin-left: 20px;
     }
 
     nav li:not(.action-item) {
@@ -118,7 +137,7 @@
               <a>Pricing</a>
             </li>
             <li>
-              <a>Open Source</a>
+              <a>Open Sources</a>
             </li>
             <li class="action-item">
               <a>Talk to Us</a>

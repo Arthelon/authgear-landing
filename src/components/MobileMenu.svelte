@@ -15,8 +15,8 @@
   #mobile-menu {
     display: none;
     position: fixed;
-    top: 26px;
-    left: 10px;
+    top: 20px;
+    left: 8px;
     z-index: 2;
     cursor: pointer;
 
@@ -25,9 +25,9 @@
 
   #mobile-menu span {
     display: block;
-    width: 25px;
-    height: 4px;
-    margin-bottom: 5px;
+    width: 15px;
+    height: 2px;
+    margin-bottom: 2px;
     position: relative;
     background: hsl(0, 0%, 66.7%);
     border-radius: 3px;
@@ -61,7 +61,7 @@
 
   #mobile-menu input:checked ~ span {
     opacity: 1;
-    transform: rotate(45deg) translate(1px, 1px);
+    transform: rotate(45deg) translate(-1px, 0px);
     background: hsl(0, 0%, 66.7%);
   }
 
@@ -71,7 +71,7 @@
   }
 
   #mobile-menu input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(3px, -1px);
+    transform: rotate(-45deg) translate(1px, -1px);
   }
 
   #mobile-menu-list {
