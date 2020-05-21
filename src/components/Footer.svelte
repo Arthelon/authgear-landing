@@ -13,7 +13,7 @@
   }
 
   img.footer-logo {
-    max-width: 100px;
+    width: 145px;
     margin-bottom: 40px;
   }
 
@@ -53,6 +53,10 @@
   }
 
   @media screen and (max-width: 768px) {
+    img.footer-logo {
+      width: 115px;
+    }
+
     .container-fluid {
       padding-right: 21px;
       padding-left: 21px;
