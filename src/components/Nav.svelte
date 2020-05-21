@@ -34,7 +34,7 @@
   }
 
   li a {
-    color: var(--primary);
+    color: #2275f4;
     font-weight: 500;
   }
 
@@ -48,7 +48,7 @@
   }
 
   .container-fluid {
-    max-width: var(--content-max-width);
+    max-width: 1200px;
   }
 
   .action-item a {

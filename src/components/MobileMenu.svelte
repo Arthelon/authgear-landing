@@ -4,7 +4,7 @@
   }
 
   li a {
-    color: var(--primary);
+    color: #2275f4;
     font-weight: 500;
   }
 
