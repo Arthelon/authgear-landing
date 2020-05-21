@@ -14,14 +14,14 @@
     z-index: 1;
   }
 
-  img {
+  .logo-wrapper img {
     height: auto;
     width: 170px;
     border: 0;
     vertical-align: middle;
   }
 
-  ul {
+  .links-wrapper ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -29,16 +29,16 @@
     padding: 0;
   }
 
-  li {
+  .links-wrapper li {
     list-style: none;
   }
 
-  li a {
+  .links-wrapper li a {
     color: #2275f4;
     font-weight: 500;
   }
 
-  li a:hover {
+  .links-wrapper li a:hover {
     color: #75a8f6;
   }
 
@@ -102,7 +102,7 @@
           <img src="header-logo.png" alt="Skygear Auth Logo" />
         </a>
       </div>
-      <div class="col-6 col-sm-6 col-md-9">
+      <div class="links-wrapper col-6 col-sm-6 col-md-9">
         <nav>
           <ul>
             <li>

@@ -1,14 +1,14 @@
 <style>
-  li {
+  #mobile-menu-list li {
     list-style: none;
   }
 
-  li a {
+  #mobile-menu-list li a {
     color: #2275f4;
     font-weight: 500;
   }
 
-  li a:hover {
+  #mobile-menu-list li a:hover {
     color: #75a8f6;
   }
 
@@ -127,7 +127,7 @@
       <a>Pricing</a>
     </li>
     <li>
-      <a>Open Source</a>
+      <a>Open Sources</a>
     </li>
   </ul>
 </div>
