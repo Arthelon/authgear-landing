@@ -12,7 +12,7 @@
     max-width: 1200px;
   }
 
-  img {
+  img.footer-logo {
     max-width: 100px;
     margin-bottom: 40px;
   }
@@ -27,16 +27,19 @@
     margin: 13px 0;
     padding: 0;
     list-style: none;
-    color: #aaaaaa;
   }
 
-  a {
-    cursor: pointer;
-    text-decoration: none;
+  .sitemap-list li {
+    line-height: 1.6;
+  }
+
+  .sitemap-list a {
+    color: #aaa;
   }
 
   .copyright-wrapper {
     margin-top: 60px;
+    line-height: 1.5;
   }
 
   @media screen and (min-width: 768px) {
@@ -65,7 +68,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-6">
-        <img src="footer-logo.png" alt="Footer Logo" />
+        <img class="footer-logo" src="footer-logo.png" alt="Footer Logo" />
       </div>
       <div class="col-12 col-md-2">
         <span class="sitemap-title">Learn</span>

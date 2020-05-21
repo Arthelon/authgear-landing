@@ -12,5 +12,7 @@
 
   a {
     cursor: pointer;
+    color: #fff;
+    text-decoration: none;
   }
 </style>
