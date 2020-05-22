@@ -3,43 +3,43 @@
     {
       title: "Single Sign-On",
       description: "Login once to multiple applications",
-      imgSrc: ""
+      imgSrc: "",
     },
     {
       title: "User Management",
       description: "Centralized management for admin",
-      imgSrc: ""
+      imgSrc: "",
     },
     {
       title: "Simple integration",
       description: "Support OpenID Connect, and K8S gateway Social Login",
-      imgSrc: ""
+      imgSrc: "",
     },
     {
       title: "Social Login",
       description: "Sign in with Google, Facebook, Apple and more",
-      imgSrc: ""
+      imgSrc: "",
     },
     {
       title: "Password Policies and MFA",
       description: "Multiple Factor Auth and Customizable Password Polices",
-      imgSrc: ""
+      imgSrc: "",
     },
     {
       title: "Sessions Management",
       description: "Better security with sessions management by users",
-      imgSrc: ""
+      imgSrc: "",
     },
     {
       title: "Customizable Look and Feel",
       description: "Looks great out of the box and customizable",
-      imgSrc: ""
+      imgSrc: "",
     },
     {
       title: "Existing user directories",
       description: "LDAP and Active Directory support",
-      imgSrc: ""
-    }
+      imgSrc: "",
+    },
   ];
 </script>
 
@@ -96,6 +96,17 @@
 
     .feature-wrapper {
       padding: 0 34px 80px 34px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .features-section {
+      padding-top: 45px;
+      padding-bottom: 25px;
+    }
+
+    .feature-wrapper {
+      padding: 0 52px 52px 52px;
     }
   }
 </style>
