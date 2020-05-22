@@ -1,44 +1,45 @@
 <script>
+  // TODO: Replace placeholder imgSrc with actual feature img links
   const features = [
     {
       title: "Single Sign-On",
       description: "Login once to multiple applications",
-      imgSrc: "",
+      imgSrc: "https://via.placeholder.com/95",
     },
     {
       title: "User Management",
       description: "Centralized management for admin",
-      imgSrc: "",
+      imgSrc: "https://via.placeholder.com/95",
     },
     {
       title: "Simple integration",
       description: "Support OpenID Connect, and K8S gateway Social Login",
-      imgSrc: "",
+      imgSrc: "https://via.placeholder.com/95",
     },
     {
       title: "Social Login",
       description: "Sign in with Google, Facebook, Apple and more",
-      imgSrc: "",
+      imgSrc: "https://via.placeholder.com/95",
     },
     {
       title: "Password Policies and MFA",
       description: "Multiple Factor Auth and Customizable Password Polices",
-      imgSrc: "",
+      imgSrc: "https://via.placeholder.com/95",
     },
     {
       title: "Sessions Management",
       description: "Better security with sessions management by users",
-      imgSrc: "",
+      imgSrc: "https://via.placeholder.com/95",
     },
     {
       title: "Customizable Look and Feel",
       description: "Looks great out of the box and customizable",
-      imgSrc: "",
+      imgSrc: "https://via.placeholder.com/95",
     },
     {
       title: "Existing user directories",
       description: "LDAP and Active Directory support",
-      imgSrc: "",
+      imgSrc: "https://via.placeholder.com/95",
     },
   ];
 </script>
