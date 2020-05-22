@@ -15,4 +15,10 @@
     color: #fff;
     text-decoration: none;
   }
+
+  button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
 </style>
