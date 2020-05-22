@@ -1,3 +1,22 @@
+<script>
+  import CodeEditor from "./CodeEditor.svelte";
+
+  const codeTabs = [
+    {
+      language: "JavaScript",
+      contents: "function() { // this is some sample JS code }"
+    },
+    {
+      language: "Kotlin",
+      contents: "function() { // this is some sample Kotlin code }"
+    },
+    {
+      language: "Swift",
+      contents: "function() { // this is some sample Swift code }"
+    }
+  ];
+</script>
+
 <style>
   .code-sample-section {
     padding-top: 0;
@@ -49,7 +68,9 @@
       </div>
     </div>
     <div class="content-row row">
-      <div class="col-12 col-md-6" />
+      <div class="col-12 col-md-6">
+        <CodeEditor {codeTabs} />
+      </div>
       <div class="col-12 col-md-6">
         <div class="ui-img-wrapper">
           <img
