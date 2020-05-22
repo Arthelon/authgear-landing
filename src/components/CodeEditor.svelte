@@ -6,7 +6,7 @@
   $: currTab = codeTabs[tabIdx];
 
   function handleTabClick(idx) {
-    return function () {
+    return function() {
       tabIdx = idx;
     };
   }
@@ -23,6 +23,7 @@
 <style>
   .editor {
     height: 100%;
+    min-height: 350px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -44,6 +45,8 @@
     height: 100%;
     color: #f4c020;
     background-color: #1b1b1b;
+    overflow: auto;
+    white-space: nowrap;
     outline: none;
     resize: none;
   }

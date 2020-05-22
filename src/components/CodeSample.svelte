@@ -4,16 +4,16 @@
   const codeTabs = [
     {
       language: "JavaScript",
-      contents: "function() { // this is some sample JS code }",
+      contents: "function() {console.log('I do not know how to code!!')}"
     },
     {
       language: "Kotlin",
-      contents: "function() { // this is some sample Kotlin code }",
+      contents: "function() { // this is some sample Kotlin code }"
     },
     {
       language: "Swift",
-      contents: "function() { // this is some sample Swift code }",
-    },
+      contents: "function() { // this is some sample Swift code }"
+    }
   ];
 </script>
 
@@ -37,6 +37,7 @@
   .code-sample__img-wrapper {
     text-align: center;
     padding-top: 25px;
+    padding-bottom: 45px;
   }
 
   .code-sample__img {
@@ -54,6 +55,16 @@
 
     .code-sample__content-wrapper {
       margin-top: 92px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .code-sample__content-wrapper {
+      margin-top: 55px;
+    }
+
+    .code-sample__img-wrapper {
+      display: none;
     }
   }
 </style>
