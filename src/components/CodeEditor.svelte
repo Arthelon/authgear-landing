@@ -6,7 +6,7 @@
   $: currTab = codeTabs[tabIdx];
 
   function handleTabClick(idx) {
-    return function() {
+    return function () {
       tabIdx = idx;
     };
   }
