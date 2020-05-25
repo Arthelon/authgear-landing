@@ -1,5 +1,6 @@
 <script>
   import HeroHeader from "../components/HeroHeader.svelte";
+  import Features from "../components/Features.svelte";
 </script>
 
 <style>
@@ -11,3 +12,4 @@
 </svelte:head>
 
 <HeroHeader />
+<Features />
