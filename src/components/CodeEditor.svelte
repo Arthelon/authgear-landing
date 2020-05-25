@@ -8,6 +8,7 @@
 
   let codeEditorElement;
   let currTab = codeTabs[0];
+  let showTooltip = false;
 
   onMount(() => {
     codeEditorElement.textContent = currTab.content;
@@ -38,6 +39,10 @@
     textArea.select();
     document.execCommand("copy");
     document.body.removeChild(textArea);
+    showTooltip = true;
+    setTimeout(() => {
+      showTooltip = false;
+    }, 1500);
   }
 </script>
 
@@ -85,6 +90,7 @@
   .editor__header__copybtn-wrapper {
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   .editor__header__copybtn {
@@ -93,6 +99,37 @@
     font-size: 13px;
     font-weight: 900;
     background-color: #fff;
+  }
+
+  .editor__header__copy-tooltip {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    top: 48px;
+    z-index: 1;
+    right: 12px;
+    opacity: 0;
+    background: #717171;
+    padding: 12px 18px;
+    border-radius: 6px;
+    transition: opacity 0.8s ease 0s;
+  }
+
+  .editor__header__copy-tooltip:before {
+    left: 38.5px;
+    top: -5px;
+    width: 0px;
+    height: 0px;
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 0px 5px 5px;
+    border-color: transparent transparent #717171;
+  }
+
+  .editor__header__copy-tooltip--visible {
+    opacity: 1;
   }
 
   @media screen and (max-width: 768px) {
@@ -118,6 +155,11 @@
       <button class="editor__header__copybtn" on:click={handleCopyClick}>
         Copy Code
       </button>
+      <div
+        class="editor__header__copy-tooltip"
+        class:editor__header__copy-tooltip--visible={showTooltip}>
+        Copied!
+      </div>
     </div>
   </div>
   <pre class="editor__code-wrapper">
