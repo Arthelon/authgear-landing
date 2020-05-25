@@ -3,6 +3,7 @@
   import Features from "../components/Features.svelte";
   import Trusted from "../components/Trusted.svelte";
   import CTA from "../components/CTA.svelte";
+  import Resources from "../components/Resouces.svelte";
 </script>
 
 <style>
@@ -17,3 +18,4 @@
 <Features />
 <Trusted />
 <CTA />
+<Resources />
