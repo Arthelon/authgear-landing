@@ -64,7 +64,7 @@
   }
 
   .editor__header__tabs-wrapper {
-    padding: 20px 25px;
+    padding: 20px 25px 15px 25px;
     background-color: #fff;
   }
 

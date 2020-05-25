@@ -47,6 +47,7 @@
     height: auto;
     display: inline-block;
     vertical-align: top;
+    box-shadow: 0 1.6px 3.6px 0 hsla(0, 0%, 0%, 0.13);
   }
 
   @media screen and (min-width: 768px) {
