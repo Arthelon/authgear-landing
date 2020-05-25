@@ -10,6 +10,8 @@
   let currTab = codeTabs[0];
   let showTooltip = false;
 
+  $: currLanguage = currTab.language.toLowerCase();
+
   onMount(() => {
     codeEditorElement.textContent = currTab.content;
   });
@@ -162,7 +164,7 @@
       </div>
     </div>
   </div>
-  <pre class="editor__code-wrapper">
-    <code class="language-{currTab.language}" bind:this={codeEditorElement} />
+  <pre class="editor__code-wrapper language-{currLanguage}">
+    <code class="language-{currLanguage}" bind:this={codeEditorElement} />
   </pre>
 </div>
