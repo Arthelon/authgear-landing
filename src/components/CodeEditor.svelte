@@ -2,30 +2,39 @@
   import Prism from "prismjs";
   import "prismjs/components/prism-kotlin";
   import "prismjs/components/prism-swift";
-  import { onMount, afterUpdate } from "svelte"; // eslint-disable-line import/no-extraneous-dependencies
 
   export let codeTabs = [];
 
-  let codeEditorElement;
   let currTab = codeTabs[0];
+  $: currLanguage = currTab.language.toLowerCase();
   let showTooltip = false;
 
-  $: currLanguage = currTab.language.toLowerCase();
+  function renderCode(language, content) {
+    let langDef;
+    switch (language) {
+      case "javascript":
+        langDef = Prism.languages.javascript;
+        break;
+      case "kotlin":
+        langDef = Prism.languages.kotlin;
+        break;
+      case "swift":
+        langDef = Prism.languages.swift;
+        break;
+      default:
+        langDef = Prism.languages.javascript;
+        break;
+    }
+    return Prism.highlight(content, langDef, language);
+  }
 
-  onMount(() => {
-    codeEditorElement.textContent = currTab.content;
-  });
-
-  // language for syntax highlighting is set using the 'language-...' classname so
-  // need to wait for view to be updated before re-highlighting
-  afterUpdate(() => {
-    Prism.highlightElement(codeEditorElement);
-  });
+  $: codeHtmlOutput = renderCode(currLanguage, currTab.content);
 
   function handleTabClick(idx) {
     return function cb() {
-      currTab = codeTabs[idx];
-      codeEditorElement.textContent = currTab.content;
+      if (currTab !== codeTabs[idx]) {
+        currTab = codeTabs[idx];
+      }
     };
   }
 
@@ -165,6 +174,8 @@
     </div>
   </div>
   <pre class="editor__code-wrapper language-{currLanguage}">
-    <code class="language-{currLanguage}" bind:this={codeEditorElement} />
+    <code class="language-{currLanguage}">
+      {@html codeHtmlOutput}
+    </code>
   </pre>
 </div>
