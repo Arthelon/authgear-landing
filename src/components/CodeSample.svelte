@@ -65,6 +65,10 @@
       padding-bottom: 60px;
     }
 
+    .code-sample__editor-wrapper {
+      padding: 0;
+    }
+
     .code-sample__content-wrapper {
       margin-top: 55px;
     }
@@ -85,7 +89,7 @@
       </div>
     </div>
     <div class="code-sample__content-wrapper row">
-      <div class="col-12 col-md-6">
+      <div class="code-sample__editor-wrapper col-12 col-md-6">
         <CodeEditor {codeTabs} />
       </div>
       <div class="col-12 col-md-6">
