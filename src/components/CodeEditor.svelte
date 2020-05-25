@@ -2,7 +2,8 @@
   import Prism from "prismjs";
   import "prismjs/components/prism-kotlin";
   import "prismjs/components/prism-swift";
-  import { afterUpdate } from "svelte";
+  import { afterUpdate } from "svelte"; // eslint-disable-line import/no-extraneous-dependencies
+
   export let codeTabs = [];
 
   let codeEditorElement;
@@ -15,7 +16,7 @@
   });
 
   function handleTabClick(idx) {
-    return function() {
+    return function cb() {
       currTab = codeTabs[idx];
       codeEditorElement.textContent = currTab.contents;
     };
@@ -40,6 +41,7 @@
   .editor {
     height: 100%;
     min-height: 350px;
+    max-height: 700px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -87,6 +89,12 @@
     font-weight: 900;
     background-color: #fff;
   }
+
+  @media screen and (max-width: 768px) {
+    .editor__header__copybtn-wrapper {
+      display: none;
+    }
+  }
 </style>
 
 <div class="editor">
@@ -95,7 +103,7 @@
       {#each codeTabs as tab, idx}
         <div
           class="editor__header__tab"
-          class:editor__header__tab--active={currTab.language == tab.language}
+          class:editor__header__tab--active={currTab.language === tab.language}
           on:click={handleTabClick(idx)}>
           {tab.language}
         </div>

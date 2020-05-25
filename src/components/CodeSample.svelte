@@ -1,19 +1,20 @@
 <script>
   import CodeEditor from "./CodeEditor.svelte";
 
+  // TODO: Replace placeholder code with actual sample code
   const codeTabs = [
     {
       language: "JavaScript",
-      contents: "function() {\n\tconsole.log('I do not know how to code!!')\n}"
+      contents: "function() {\n\tconsole.log('I do not know how to code!!')\n}",
     },
     {
       language: "Kotlin",
-      contents: "function() { // this is some sample Kotlin code }"
+      contents: "function() { // this is some sample Kotlin code }",
     },
     {
       language: "Swift",
-      contents: "function() { // this is some sample Swift code }"
-    }
+      contents: "function() { // this is some sample Swift code }",
+    },
   ];
 </script>
 
@@ -31,6 +32,7 @@
     color: #166ff7;
     font-size: 32px;
     text-align: center;
+    line-height: 1.4;
     margin: 0;
   }
 
@@ -59,6 +61,10 @@
   }
 
   @media screen and (max-width: 768px) {
+    .code-sample {
+      padding-bottom: 60px;
+    }
+
     .code-sample__content-wrapper {
       margin-top: 55px;
     }
