@@ -91,7 +91,7 @@
 
   @media screen and (min-width: 768px) {
     .features-section {
-      padding-top: 130px;
+      padding-top: 145px;
       padding-bottom: 50px;
     }
 
@@ -102,12 +102,11 @@
 
   @media screen and (max-width: 768px) {
     .features-section {
-      padding-top: 45px;
-      padding-bottom: 25px;
+      padding-top: 60px;
     }
 
     .feature-wrapper {
-      padding: 0 52px 52px 52px;
+      padding: 0 52px 60px 52px;
     }
   }
 </style>
