@@ -1,22 +1,38 @@
 <script>
+  import Prism from "prismjs";
+  import "prismjs/components/prism-kotlin";
+  import "prismjs/components/prism-swift";
+  import { afterUpdate } from "svelte";
   export let codeTabs = [];
 
-  let tabIdx = 0;
-  let editorAreaElement;
-  $: currTab = codeTabs[tabIdx];
+  let codeEditorElement;
+  let currTab = codeTabs[0];
+
+  // language for syntax highlighting is set using the 'language-...' classname so
+  // need to wait for view to be updated before re-highlighting
+  afterUpdate(() => {
+    Prism.highlightElement(codeEditorElement);
+  });
 
   function handleTabClick(idx) {
     return function() {
-      tabIdx = idx;
+      currTab = codeTabs[idx];
+      codeEditorElement.textContent = currTab.contents;
     };
   }
 
   function handleCopyClick() {
-    editorAreaElement.focus();
-    editorAreaElement.select();
+    const textArea = document.createElement("textarea");
+    textArea.value = currTab.contents;
+    textArea.style.top = "0";
+    textArea.style.left = "0";
+    textArea.style.zIndex = "-1";
+    textArea.style.position = "fixed";
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
     document.execCommand("copy");
-    window.getSelection().removeAllRanges();
-    editorAreaElement.blur();
+    document.body.removeChild(textArea);
   }
 </script>
 
@@ -35,20 +51,10 @@
     justify-content: space-between;
   }
 
-  .editor__textarea {
-    font-size: 13px;
-    font-family: Consolas, Monaco, Lucida Console, Liberation Mono,
-      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-    margin: 0;
-    padding: 32px 27px;
-    width: 100%;
+  .editor__code-wrapper {
     height: 100%;
-    color: #f4c020;
-    background-color: #1b1b1b;
-    overflow: auto;
-    white-space: nowrap;
-    outline: none;
-    resize: none;
+    margin: 0;
+    border-radius: 0;
   }
 
   .editor__header__tabs-wrapper {
@@ -101,9 +107,9 @@
       </button>
     </div>
   </div>
-  <textarea
-    readonly
-    bind:this={editorAreaElement}
-    class="editor__textarea"
-    value={currTab.contents} />
+  <pre class="editor__code-wrapper">
+    <code class="language-{currTab.language}" bind:this={codeEditorElement}>
+      {currTab.contents}
+    </code>
+  </pre>
 </div>

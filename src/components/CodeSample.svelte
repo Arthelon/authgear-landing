@@ -4,7 +4,7 @@
   const codeTabs = [
     {
       language: "JavaScript",
-      contents: "function() {console.log('I do not know how to code!!')}"
+      contents: "function() {\n\tconsole.log('I do not know how to code!!')\n}"
     },
     {
       language: "Kotlin",
