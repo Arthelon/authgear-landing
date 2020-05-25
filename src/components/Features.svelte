@@ -1,45 +1,44 @@
 <script>
-  // TODO: Replace placeholder imgSrc with actual feature img links
   const features = [
     {
       title: "Single Sign-On",
       description: "Login once to multiple applications",
-      imgSrc: "https://via.placeholder.com/95",
+      imgSrc: "features/sso.png",
     },
     {
       title: "User Management",
       description: "Centralized management for admin",
-      imgSrc: "https://via.placeholder.com/95",
+      imgSrc: "features/user-management.png",
     },
     {
       title: "Simple integration",
       description: "Support OpenID Connect, and K8S gateway Social Login",
-      imgSrc: "https://via.placeholder.com/95",
+      imgSrc: "features/simple-integration.png",
     },
     {
       title: "Social Login",
       description: "Sign in with Google, Facebook, Apple and more",
-      imgSrc: "https://via.placeholder.com/95",
+      imgSrc: "features/social-login.png",
     },
     {
       title: "Password Policies and MFA",
       description: "Multiple Factor Auth and Customizable Password Polices",
-      imgSrc: "https://via.placeholder.com/95",
+      imgSrc: "features/password-policies-mfa.png",
     },
     {
       title: "Sessions Management",
       description: "Better security with sessions management by users",
-      imgSrc: "https://via.placeholder.com/95",
+      imgSrc: "features/sessions-management.png",
     },
     {
       title: "Customizable Look and Feel",
       description: "Looks great out of the box and customizable",
-      imgSrc: "https://via.placeholder.com/95",
+      imgSrc: "features/customizable.png",
     },
     {
       title: "Existing user directories",
       description: "LDAP and Active Directory support",
-      imgSrc: "https://via.placeholder.com/95",
+      imgSrc: "features/user-directories.png",
     },
   ];
 </script>
@@ -91,7 +90,7 @@
 
   @media screen and (min-width: 768px) {
     .features-section {
-      padding-top: 130px;
+      padding-top: 145px;
       padding-bottom: 50px;
     }
 
@@ -102,12 +101,11 @@
 
   @media screen and (max-width: 768px) {
     .features-section {
-      padding-top: 45px;
-      padding-bottom: 25px;
+      padding-top: 60px;
     }
 
     .feature-wrapper {
-      padding: 0 52px 52px 52px;
+      padding: 0 52px 60px 52px;
     }
   }
 </style>
