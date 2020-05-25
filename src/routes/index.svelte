@@ -4,6 +4,7 @@
   import TrustedBy from "../components/TrustedBy.svelte";
   import CallToAction from "../components/CallToAction.svelte";
   import Resources from "../components/Resources.svelte";
+  import DevicesDemo from "../components/DevicesDemo.svelte";
 </script>
 
 <style>
@@ -15,6 +16,7 @@
 </svelte:head>
 
 <HeroHeader />
+<DevicesDemo />
 <Features />
 <TrustedBy />
 <CallToAction />
