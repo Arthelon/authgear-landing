@@ -5,15 +5,15 @@
   const codeTabs = [
     {
       language: "JavaScript",
-      contents: "function() {\n\tconsole.log('I do not know how to code!!')\n}",
+      content: "function() {\n\tconsole.log('I do not know how to code!!')\n}",
     },
     {
       language: "Kotlin",
-      contents: "function() { // this is some sample Kotlin code }",
+      content: "function() { // this is some sample Kotlin code }",
     },
     {
       language: "Swift",
-      contents: "function() { // this is some sample Swift code }",
+      content: "function() { // this is some sample Swift code }",
     },
   ];
 </script>

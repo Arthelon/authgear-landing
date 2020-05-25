@@ -2,12 +2,16 @@
   import Prism from "prismjs";
   import "prismjs/components/prism-kotlin";
   import "prismjs/components/prism-swift";
-  import { afterUpdate } from "svelte"; // eslint-disable-line import/no-extraneous-dependencies
+  import { onMount, afterUpdate } from "svelte"; // eslint-disable-line import/no-extraneous-dependencies
 
   export let codeTabs = [];
 
   let codeEditorElement;
   let currTab = codeTabs[0];
+
+  onMount(() => {
+    codeEditorElement.textContent = currTab.content;
+  });
 
   // language for syntax highlighting is set using the 'language-...' classname so
   // need to wait for view to be updated before re-highlighting
@@ -18,13 +22,13 @@
   function handleTabClick(idx) {
     return function cb() {
       currTab = codeTabs[idx];
-      codeEditorElement.textContent = currTab.contents;
+      codeEditorElement.textContent = currTab.content;
     };
   }
 
   function handleCopyClick() {
     const textArea = document.createElement("textarea");
-    textArea.value = currTab.contents;
+    textArea.value = currTab.content;
     textArea.style.top = "0";
     textArea.style.left = "0";
     textArea.style.zIndex = "-1";
@@ -71,6 +75,7 @@
     padding: 5px 4px;
     margin-right: 35px;
     cursor: pointer;
+    background-color: #fff;
   }
 
   .editor__header__tab--active {
@@ -101,12 +106,12 @@
   <div class="editor__header">
     <div class="editor__header__tabs-wrapper">
       {#each codeTabs as tab, idx}
-        <div
+        <button
           class="editor__header__tab"
           class:editor__header__tab--active={currTab.language === tab.language}
           on:click={handleTabClick(idx)}>
           {tab.language}
-        </div>
+        </button>
       {/each}
     </div>
     <div class="editor__header__copybtn-wrapper">
@@ -116,8 +121,6 @@
     </div>
   </div>
   <pre class="editor__code-wrapper">
-    <code class="language-{currTab.language}" bind:this={codeEditorElement}>
-      {currTab.contents}
-    </code>
+    <code class="language-{currTab.language}" bind:this={codeEditorElement} />
   </pre>
 </div>
