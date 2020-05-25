@@ -1,9 +1,9 @@
 <script>
   import HeroHeader from "../components/HeroHeader.svelte";
   import Features from "../components/Features.svelte";
-  import Trusted from "../components/Trusted.svelte";
-  import CTA from "../components/CTA.svelte";
-  import Resources from "../components/Resouces.svelte";
+  import TrustedBy from "../components/TrustedBy.svelte";
+  import CallToAction from "../components/CallToAction.svelte";
+  import Resources from "../components/Resources.svelte";
 </script>
 
 <style>
@@ -16,6 +16,6 @@
 
 <HeroHeader />
 <Features />
-<Trusted />
-<CTA />
+<TrustedBy />
+<CallToAction />
 <Resources />
