@@ -12,14 +12,21 @@
   .contact-wrapper .email-input {
     outline: none;
     font-size: 18px;
+    font-weight: 400;
     border: none;
     border-bottom: 1px solid #979797;
     padding-bottom: 10px;
   }
 
+  .contact-wrapper .email-input::placeholder {
+    color: #aaaaaa;
+  }
+
   .contact-wrapper .submit-btn {
     color: #fff;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
     padding: 10px 24px;
     background: #166ff7;
     max-width: 120px;

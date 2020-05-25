@@ -54,6 +54,11 @@
       padding-bottom: 80px;
     }
 
+    .container-fluid {
+      padding-right: 18px;
+      padding-left: 18px;
+    }
+
     .trusted__title-wrapper {
       justify-content: center;
     }
