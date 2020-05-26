@@ -41,11 +41,6 @@
       buttonHref: "mailto:hello@skygear.io",
     },
   ];
-  let colSize = Math.floor(12 / pricingCards.length);
-  // maximum of 4 cards per row
-  if (colSize < 3) {
-    colSize = 3;
-  }
 </script>
 
 <style>
@@ -92,7 +87,7 @@
   <div class="container-fluid">
     <div class="row">
       {#each pricingCards as card}
-        <div class="col-12 col-md-{colSize} pricing-table__card-wrapper">
+        <div class="col-12 col-md-4 pricing-table__card-wrapper">
           <PricingTableCard {...card} />
         </div>
       {/each}
