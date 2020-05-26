@@ -134,7 +134,7 @@
               <a>Documentation</a>
             </li>
             <li>
-              <a>Pricing</a>
+              <a href="/pricing">Pricing</a>
             </li>
             <li>
               <a>Open Sources</a>
