@@ -90,6 +90,7 @@
   .pricing-card__footer__price-subtext {
     font-weight: 400;
     font-size: 15px;
+    line-height: 1.4;
     color: #666;
   }
 </style>
@@ -103,16 +104,16 @@
     {/each}
   </ul>
   <div class="pricing-card__footer">
-    {#if buttonText && buttonHref}
-      <a class="pricing-card__footer__btn" target="_blank" href={buttonHref}>
-        {buttonText}
-      </a>
-    {/if}
     {#if pricingText}
       <h3 class="pricing-card__footer__price-text">{pricingText}</h3>
     {/if}
     {#if pricingSubtext}
       <span class="pricing-card__footer__price-subtext">{pricingSubtext}</span>
+    {/if}
+    {#if buttonText && buttonHref}
+      <a class="pricing-card__footer__btn" target="_blank" href={buttonHref}>
+        {buttonText}
+      </a>
     {/if}
   </div>
 

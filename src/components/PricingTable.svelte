@@ -11,8 +11,8 @@
         "1 Day of Log Retention",
         "Account remove if no activities for 60 days",
         "No SLA",
-        "Community Support"
-      ]
+        "Community Support",
+      ],
     },
     {
       title: "Startups",
@@ -22,10 +22,10 @@
         "Up to 10 Days of Log Retention",
         "AD, LDAP, SAML support",
         "Passwordless Login / Verify by SMS",
-        "Email Support"
+        "Email Support",
       ],
       pricingText: "USD 200",
-      pricingSubtext: "+USD 20 per 1000 Monthly Active Users"
+      pricingSubtext: "+USD 20 per 1000 Monthly Active Users",
     },
     {
       title: "Enterprise",
@@ -35,11 +35,11 @@
         "Enterprise Grade SLA support",
         "Professional Support and Services",
         "Anomaly Detection",
-        "Audited Reports"
+        "Audited Reports",
       ],
       buttonText: "Pricing: Contact Us",
-      buttonHref: "mailto:hello@skygear.io"
-    }
+      buttonHref: "mailto:hello@skygear.io",
+    },
   ];
   let colSize = Math.floor(12 / pricingCards.length);
   // maximum of 4 cards per row
