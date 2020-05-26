@@ -38,7 +38,7 @@
   <div class="container-fluid devices-demo__img-wrapper">
     <img
       class="devices-demo__img"
-      src="/img/devices-demo.png"
+      src="img/devices-demo.png"
       alt="Demo of Skygear Auth on Mobile and Desktop devices" />
   </div>
 </section>

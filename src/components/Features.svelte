@@ -3,42 +3,42 @@
     {
       title: "Single Sign-On",
       description: "Login once to multiple applications",
-      imgSrc: "/img/features/sso.png",
+      imgSrc: "img/features/sso.png",
     },
     {
       title: "User Management",
       description: "Centralized management for admin",
-      imgSrc: "/img/features/user-management.png",
+      imgSrc: "img/features/user-management.png",
     },
     {
       title: "Simple integration",
       description: "Support OpenID Connect, and K8S gateway Social Login",
-      imgSrc: "/img/features/simple-integration.png",
+      imgSrc: "img/features/simple-integration.png",
     },
     {
       title: "Social Login",
       description: "Sign in with Google, Facebook, Apple and more",
-      imgSrc: "/img/features/social-login.png",
+      imgSrc: "img/features/social-login.png",
     },
     {
       title: "Password Policies and MFA",
       description: "Multiple Factor Auth and Customizable Password Polices",
-      imgSrc: "/img/features/password-policies-mfa.png",
+      imgSrc: "img/features/password-policies-mfa.png",
     },
     {
       title: "Sessions Management",
       description: "Better security with sessions management by users",
-      imgSrc: "/img/features/sessions-management.png",
+      imgSrc: "img/features/sessions-management.png",
     },
     {
       title: "Customizable Look and Feel",
       description: "Looks great out of the box and customizable",
-      imgSrc: "/img/features/customizable.png",
+      imgSrc: "img/features/customizable.png",
     },
     {
       title: "Existing user directories",
       description: "LDAP and Active Directory support",
-      imgSrc: "/img/features/user-directories.png",
+      imgSrc: "img/features/user-directories.png",
     },
   ];
 </script>
