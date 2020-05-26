@@ -1,9 +1,3 @@
-<script>
-  function handleSubmit(e) {
-    e.preventDefault();
-  }
-</script>
-
 <style>
   .contact-wrapper {
     display: flex;
@@ -23,6 +17,8 @@
   }
 
   .contact-wrapper .submit-btn {
+    outline: none;
+    border: none;
     color: #fff;
     cursor: pointer;
     font-size: 14px;
@@ -56,7 +52,26 @@
   }
 </style>
 
-<form class="contact-wrapper" on:submit={handleSubmit}>
-  <input class="email-input" type="email" placeholder="Your Email" />
-  <button class="submit-btn" type="submit">Talk to Us</button>
+<form
+  action="https://oursky.us2.list-manage.com/subscribe/post?u=34db69ee3e01fe49e12302054&amp;id=78e15b4a2a"
+  method="post"
+  name="mc-embedded-subscribe-form"
+  class="contact-wrapper"
+  target="_blank"
+  novalidate>
+  <input
+    class="email-input"
+    value=""
+    name="EMAIL"
+    type="email"
+    placeholder="Your Email" />
+  <input type="submit" value="Talk to Us" name="subscribe" class="submit-btn" />
+  <!-- Hidden input to prevent bot signups -->
+  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+    <input
+      type="text"
+      name="b_34db69ee3e01fe49e12302054_78e15b4a2a"
+      tabindex="-1"
+      value="" />
+  </div>
 </form>
