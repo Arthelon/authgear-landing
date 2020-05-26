@@ -23,8 +23,8 @@
 
   @media screen and (max-width: 768px) {
     .pricing__header__title {
-      padding-left: 18px;
-      padding-right: 18px;
+      padding-left: 29px;
+      padding-right: 29px;
       font-size: 24px;
     }
   }
