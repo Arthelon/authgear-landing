@@ -1,6 +1,7 @@
 <style global>
   @import "../../node_modules/normalize.css/normalize.css";
   @import "../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
+  @import "../../node_modules/prism-themes/themes/prism-dracula.css";
 
   body {
     font-family: "Red Hat Display", Roboto, -apple-system, BlinkMacSystemFont,
@@ -14,5 +15,11 @@
     cursor: pointer;
     color: #fff;
     text-decoration: none;
+  }
+
+  button {
+    outline: none;
+    border: none;
+    cursor: pointer;
   }
 </style>

@@ -30,8 +30,6 @@
     padding: 10px 24px;
     background: #166ff7;
     max-width: 120px;
-    outline: none;
-    border: none;
     box-shadow: 0 2px 7px hsla(0, 0%, 0%, 0.5);
   }
 

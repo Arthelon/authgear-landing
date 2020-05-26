@@ -5,6 +5,7 @@
   import CallToAction from "../components/CallToAction.svelte";
   import Resources from "../components/Resources.svelte";
   import DevicesDemo from "../components/DevicesDemo.svelte";
+  import CodeSample from "../components/CodeSample.svelte";
 </script>
 
 <style>
@@ -18,6 +19,7 @@
 <HeroHeader />
 <DevicesDemo />
 <Features />
+<CodeSample />
 <TrustedBy />
 <CallToAction />
 <Resources />
