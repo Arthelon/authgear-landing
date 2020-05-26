@@ -2,6 +2,7 @@
   import PricingHeader from "../components/PricingHeader.svelte";
   import PricingTable from "../components/PricingTable.svelte";
   import Resources from "../components/Resources.svelte";
+  import CallToAction from "../components/CallToAction.svelte";
 </script>
 
 <svelte:head>
@@ -9,4 +10,5 @@
 </svelte:head>
 <PricingHeader />
 <PricingTable />
+<CallToAction />
 <Resources />
