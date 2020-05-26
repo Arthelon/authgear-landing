@@ -72,8 +72,8 @@
     }
 
     .container-fluid {
-      padding-left: 29px;
-      padding-right: 29px;
+      padding-left: 18px;
+      padding-right: 18px;
     }
   }
 </style>
