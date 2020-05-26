@@ -2,10 +2,6 @@
   export let title = "";
   export let description = "";
   export let features = [];
-  export let buttonText = "";
-  export let buttonHref = "";
-  export let pricingText = "";
-  export let pricingSubtext = "";
 </script>
 
 <style>
@@ -57,42 +53,6 @@
     min-height: 100px;
     padding-top: 36px;
   }
-
-  .pricing-card__footer__btn {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 14px 16px;
-    border: 1px solid transparent;
-    border-radius: 0;
-    transition: background-color 0.25s ease-out, color 0.25s ease-out;
-    font-size: 15px;
-    line-height: 1;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    background-color: #166bef;
-    color: #fff;
-  }
-
-  .pricing-card__footer__btn:hover {
-    background-color: #14679e;
-  }
-
-  .pricing-card__footer__price-text {
-    white-space: nowrap;
-    font-weight: 400;
-    font-size: 20px;
-    margin: 0 10px 5px 0;
-    margin-top: 0;
-    margin-bottom: 5px;
-  }
-
-  .pricing-card__footer__price-subtext {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1.4;
-    color: #666;
-  }
 </style>
 
 <div class="pricing-card">
@@ -104,17 +64,6 @@
     {/each}
   </ul>
   <div class="pricing-card__footer">
-    {#if pricingText}
-      <h3 class="pricing-card__footer__price-text">{pricingText}</h3>
-    {/if}
-    {#if pricingSubtext}
-      <span class="pricing-card__footer__price-subtext">{pricingSubtext}</span>
-    {/if}
-    {#if buttonText && buttonHref}
-      <a class="pricing-card__footer__btn" target="_blank" href={buttonHref}>
-        {buttonText}
-      </a>
-    {/if}
+    <slot />
   </div>
-
 </div>
