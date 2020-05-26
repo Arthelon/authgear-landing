@@ -72,7 +72,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-6">
-        <img class="footer-logo" src="footer-logo.png" alt="Footer Logo" />
+        <img class="footer-logo" src="/img/footer-logo.png" alt="Footer Logo" />
       </div>
       <div class="col-12 col-md-2">
         <span class="sitemap-title">Learn</span>

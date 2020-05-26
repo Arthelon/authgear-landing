@@ -81,7 +81,7 @@
         <div class="trustedby__img-wrapper">
           <img
             class="trustedby__img"
-            src="trustedby/hkpc-logo.png"
+            src="/img/trustedby/hkpc-logo.png"
             alt="HKPC Logo" />
         </div>
       </div>
@@ -89,7 +89,7 @@
         <div class="trustedby__img-wrapper">
           <img
             class="trustedby__img"
-            src="trustedby/cmic-logo.png"
+            src="/img/trustedby/cmic-logo.png"
             alt="CMIC Logo" />
         </div>
       </div>
@@ -97,7 +97,7 @@
         <div class="trustedby__img-wrapper">
           <img
             class="trustedby__img"
-            src="trustedby/rees-logo.png"
+            src="/img/trustedby/rees-logo.png"
             alt="REES Logo" />
         </div>
       </div>

@@ -117,8 +117,13 @@
   <div class="container-fluid">
     <div class="row">
       <div class="logo-wrapper col-6 col-sm-6 col-md-3">
+<<<<<<< HEAD
         <a href="">
           <img src="header-logo.png" alt="Skygear Auth Logo" />
+=======
+        <a href="/">
+          <img src="/img/header-logo.png" alt="Skygear Auth Logo" />
+>>>>>>> Move image assets into separate folder
         </a>
       </div>
       <div class="links-wrapper col-6 col-sm-6 col-md-9">
