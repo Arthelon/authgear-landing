@@ -23,7 +23,9 @@
         "AD, LDAP, SAML support",
         "Passwordless Login / Verify by SMS",
         "Email Support"
-      ]
+      ],
+      pricingText: "USD 200",
+      pricingSubtext: "+USD 20 per 1000 Monthly Active Users"
     },
     {
       title: "Enterprise",

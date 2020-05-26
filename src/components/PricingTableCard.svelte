@@ -4,6 +4,8 @@
   export let features = [];
   export let buttonText = "";
   export let buttonHref = "";
+  export let pricingText = "";
+  export let pricingSubtext = "";
 </script>
 
 <style>
@@ -50,9 +52,10 @@
   }
 
   .pricing-card__footer {
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
     padding-top: 36px;
-    vertical-align: middle;
   }
 
   .pricing-card__footer__btn {
@@ -74,6 +77,21 @@
   .pricing-card__footer__btn:hover {
     background-color: #14679e;
   }
+
+  .pricing-card__footer__price-text {
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 10px 5px 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .pricing-card__footer__price-subtext {
+    font-weight: 400;
+    font-size: 15px;
+    color: #666;
+  }
 </style>
 
 <div class="pricing-card">
@@ -89,6 +107,12 @@
       <a class="pricing-card__footer__btn" target="_blank" href={buttonHref}>
         {buttonText}
       </a>
+    {/if}
+    {#if pricingText}
+      <h3 class="pricing-card__footer__price-text">{pricingText}</h3>
+    {/if}
+    {#if pricingSubtext}
+      <span class="pricing-card__footer__price-subtext">{pricingSubtext}</span>
     {/if}
   </div>
 
