@@ -64,6 +64,6 @@
     {/each}
   </ul>
   <div class="pricing-card__footer">
-    <slot />
+    <slot name="footer" />
   </div>
 </div>

@@ -93,10 +93,12 @@
           title="Startups"
           description="Grow without pain and security"
           features={['1,000 Monthly Active Users', 'Up to 10 Days of Log Retention', 'AD, LDAP, SAML support', 'Passwordless Login / Verify by SMS', 'Email Support']}>
-          <h3 class="pricing-table__card__price-text">USD 200</h3>
-          <span class="pricing-table__card__price-subtext">
-            +USD 20 per 1000 Monthly Active Users
-          </span>
+          <div slot="footer">
+            <h3 class="pricing-table__card__price-text">USD 200</h3>
+            <span class="pricing-table__card__price-subtext">
+              +USD 20 per 1000 Monthly Active Users
+            </span>
+          </div>
         </PricingTableCard>
       </div>
       <div class="col-12 col-md-4 pricing-table__card-wrapper">
@@ -104,7 +106,10 @@
           title="Enterprise"
           description="Run Authgear for your mission-critical applications"
           features={['Managed SaaS or Private Cloud Deployment', 'Enterprise Grade SLA support', 'Professional Support and Services', 'Anomaly Detection', 'Audited Reports']}>
-          <a class="pricing-table__card__btn" href="mailto:hello@skygear.io">
+          <a
+            slot="footer"
+            class="pricing-table__card__btn"
+            href="mailto:hello@skygear.io">
             Pricing: Contact Us
           </a>
         </PricingTableCard>
