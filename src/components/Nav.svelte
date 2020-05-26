@@ -117,7 +117,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="logo-wrapper col-6 col-sm-6 col-md-3">
-        <a href="/">
+        <a href="">
           <img src="header-logo.png" alt="Skygear Auth Logo" />
         </a>
       </div>
@@ -134,7 +134,7 @@
               <a>Documentation</a>
             </li>
             <li>
-              <a href="/pricing">Pricing</a>
+              <a href="pricing">Pricing</a>
             </li>
             <li>
               <a>Open Sources</a>
