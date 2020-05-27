@@ -14,7 +14,7 @@
     "check-format": "prettier --list-different \"src/**/*.{js,html,svelte,css,scss}\"",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:js": "eslint \"src/**/*.svelte\" --max-warnings=0",
-    "lint:css": "stylelint \"src/**/*.{svelte,css}\""
+    "lint:css": "stylelint \"src/**/*.{svelte,css}\" --mw=0"
   },
   "dependencies": {
     "bootstrap": "4.5.0",
