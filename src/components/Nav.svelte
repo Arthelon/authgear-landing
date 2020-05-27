@@ -3,7 +3,7 @@
 </script>
 
 <style>
-  header {
+  .nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -14,14 +14,19 @@
     z-index: 1;
   }
 
-  .logo-wrapper img {
+  .nav__logo-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__logo-img {
     height: auto;
     width: 170px;
     border: 0;
     vertical-align: middle;
   }
 
-  .links-wrapper ul {
+  .nav__links-list {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -29,30 +34,24 @@
     padding: 0;
   }
 
-  .links-wrapper li {
+  .nav__link-item {
     list-style: none;
   }
 
-  .links-wrapper li a {
+  .nav__link {
     color: #2275f4;
     font-weight: 500;
   }
 
-  .links-wrapper li a:hover {
+  .nav__link:hover {
     color: #75a8f6;
-  }
-
-  .logo-wrapper {
-    display: flex;
-    align-items: center;
   }
 
   .container-fluid {
     max-width: 1200px;
   }
 
-  .action-item a {
-    padding: 10px 23px;
+  .nav__link--action {
     box-shadow: 0 2px 7px hsla(0, 0%, 0%, 0.5);
     background-color: #fff;
     margin-left: 20px;
@@ -64,9 +63,13 @@
       padding-left: 56px;
     }
 
-    li a {
+    .nav__link {
       font-size: 14px;
       padding: 8px 11px;
+    }
+
+    .nav__link--action {
+      padding: 10px 23px;
     }
   }
 
@@ -76,9 +79,13 @@
       padding-left: 45px;
     }
 
-    li a {
+    .nav__link {
       font-size: 12px;
       padding: 8px 5px;
+    }
+
+    .nav__link--action {
+      padding: 10px 23px;
     }
   }
 
@@ -88,59 +95,62 @@
       padding-left: 10px;
     }
 
-    .action-item a {
+    .nav__link--action {
       font-size: 12px;
       padding: 5px 18px;
       margin-left: 0;
     }
 
-    header {
+    .nav {
       padding: 0;
     }
 
-    .logo-wrapper img {
+    .nav__logo-img {
       width: 110px;
       height: auto;
     }
 
-    .logo-wrapper a {
+    .nav__logo-img {
       margin-left: 20px;
     }
 
-    nav li:not(.action-item) {
+    .nav__link:not(.nav__link--action) {
       display: none;
     }
   }
 </style>
 
-<header>
+<header class="nav">
   <div class="container-fluid">
     <div class="row">
-      <div class="logo-wrapper col-6 col-sm-6 col-md-3">
+      <div class="nav__logo-wrapper col-6 col-sm-6 col-md-3">
         <a href="">
-          <img src="img/header-logo.png" alt="Skygear Auth Logo" />
+          <img
+            class="nav__logo-img"
+            src="img/header-logo.png"
+            alt="Skygear Auth Logo" />
         </a>
       </div>
-      <div class="links-wrapper col-6 col-sm-6 col-md-9">
+      <div class="col-6 col-sm-6 col-md-9">
         <nav>
-          <ul>
-            <li>
-              <a>Features</a>
+          <ul class="nav__links-list">
+            <li class="nav__link-item">
+              <a class="nav__link">Features</a>
             </li>
-            <li>
-              <a>Comparison</a>
+            <li class="nav__link-item">
+              <a class="nav__link">Comparison</a>
             </li>
-            <li>
-              <a>Documentation</a>
+            <li class="nav__link-item">
+              <a class="nav__link">Documentation</a>
             </li>
-            <li>
-              <a href="pricing">Pricing</a>
+            <li class="nav__link-item">
+              <a class="nav__link" href="pricing">Pricing</a>
             </li>
-            <li>
-              <a>Open Sources</a>
+            <li class="nav__link-item">
+              <a class="nav__link">Open Sources</a>
             </li>
-            <li class="action-item">
-              <a>Talk to Us</a>
+            <li class="nav__link-item">
+              <a class="nav__link nav__link--action">Talk to Us</a>
             </li>
           </ul>
         </nav>
