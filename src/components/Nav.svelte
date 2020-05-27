@@ -4,7 +4,7 @@
     { name: "Comparison", href: "." },
     { name: "Documentation", href: "." },
     { name: "Pricing", href: "pricing" },
-    { name: "Open Sources", href: "." },
+    { name: "Open Sources", href: "." }
   ];
 </script>
 
@@ -174,7 +174,7 @@
 
     .nav__action-btn {
       font-size: 12px;
-      padding: 5px 18px;
+      padding: 6px 18px;
       margin-left: 0;
     }
 
