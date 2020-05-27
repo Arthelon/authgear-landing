@@ -4,7 +4,7 @@
     { name: "Comparison", href: "." },
     { name: "Documentation", href: "." },
     { name: "Pricing", href: "pricing" },
-    { name: "Open Sources", href: "." },
+    { name: "Open Sources", href: "." }
   ];
 </script>
 
@@ -263,7 +263,11 @@
               {/each}
             </ul>
           </div>
-          <a class="nav__action-btn">Talk to Us</a>
+          <a
+            href="https://oursky.us2.list-manage.com/subscribe/post?u=34db69ee3e01fe49e12302054&amp;id=78e15b4a2a"
+            class="nav__action-btn">
+            Talk to Us
+          </a>
         </nav>
       </div>
     </div>
