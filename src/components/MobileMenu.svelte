@@ -83,6 +83,7 @@
     background: hsla(0, 0%, 100%, 0.95);
     list-style-type: none;
     border-right: 1px solid #e8e8e8;
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
     min-height: calc(100vh + 100px);
     transform-origin: 0 0;
     transform: translate(-100%);

@@ -74,7 +74,9 @@
       "stylelint-csstree-validator"
     ],
     "rules": {
-      "plugin/no-unsupported-browser-features": true,
+      "plugin/no-unsupported-browser-features": [true, {
+        "ignore": ["flexbox", "outline"]
+      }],
       "csstree/validator": true
     },
     "defaultSeverity": "error"
