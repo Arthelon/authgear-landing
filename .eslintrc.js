@@ -21,14 +21,6 @@ module.exports = {
         "import/no-unresolved": "off",
         "import/prefer-default-export": "off",
       },
-      settings: {
-        'svelte3/ignore-styles': (attrs) => {
-          // to suppress 'css-unused-selector' warnings
-          if (attrs.global)
-            return true;
-          return false;
-        }
-      }
     },
   ],
   extends: ["airbnb-base", "prettier"],

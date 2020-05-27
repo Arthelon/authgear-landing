@@ -1,0 +1,23 @@
+@import url("../../node_modules/normalize.css/normalize.css");
+@import url("../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css");
+@import url("../../node_modules/prism-themes/themes/prism-dracula.css");
+
+body {
+  font-family: "Red Hat Display", Roboto, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+a {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
