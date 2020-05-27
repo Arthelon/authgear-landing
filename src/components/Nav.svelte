@@ -4,7 +4,7 @@
     { name: "Comparison", href: "." },
     { name: "Documentation", href: "." },
     { name: "Pricing", href: "pricing" },
-    { name: "Open Sources", href: "." }
+    { name: "Open Sources", href: "." },
   ];
 </script>
 
@@ -219,6 +219,7 @@
       background: hsla(0, 0%, 100%, 0.95);
       list-style-type: none;
       border-right: 1px solid #e8e8e8;
+      /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
       min-height: calc(100vh + 100px);
       transform-origin: 0 0;
       transform: translate(-100%);
@@ -241,7 +242,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="nav__logo-wrapper col-6 col-sm-6 col-md-3">
-        <a href="">
+        <a href=".">
           <img
             class="nav__logo-img"
             src="img/header-logo.png"
