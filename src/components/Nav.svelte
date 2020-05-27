@@ -1,3 +1,13 @@
+<script>
+  const navLinks = [
+    { name: "Features", href: "." },
+    { name: "Comparison", href: "." },
+    { name: "Documentation", href: "." },
+    { name: "Pricing", href: "pricing" },
+    { name: "Open Sources", href: "." },
+  ];
+</script>
+
 <style>
   .nav {
     position: fixed;
@@ -248,21 +258,11 @@
             <span class="nav__mobile-toggle-line" />
             <span class="nav__mobile-toggle-line" />
             <ul class="nav__links-list">
-              <li class="nav__link-item">
-                <a class="nav__link">Features</a>
-              </li>
-              <li class="nav__link-item">
-                <a class="nav__link">Comparison</a>
-              </li>
-              <li class="nav__link-item">
-                <a class="nav__link">Documentation</a>
-              </li>
-              <li class="nav__link-item">
-                <a class="nav__link" href="pricing">Pricing</a>
-              </li>
-              <li class="nav__link-item">
-                <a class="nav__link">Open Sources</a>
-              </li>
+              {#each navLinks as navLink}
+                <li class="nav__link-item">
+                  <a class="nav__link" href={navLink.href}>{navLink.name}</a>
+                </li>
+              {/each}
             </ul>
           </div>
           <a class="nav__action-btn">Talk to Us</a>
