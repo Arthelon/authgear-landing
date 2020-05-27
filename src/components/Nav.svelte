@@ -4,7 +4,7 @@
     { name: "Comparison", href: "." },
     { name: "Documentation", href: "." },
     { name: "Pricing", href: "pricing" },
-    { name: "Open Sources", href: "." }
+    { name: "Open Sources", href: "." },
   ];
 </script>
 
@@ -200,8 +200,6 @@
       top: 20px;
       left: 8px;
       z-index: 2;
-      cursor: pointer;
-      user-select: none;
     }
 
     .nav__mobile-toggle {
