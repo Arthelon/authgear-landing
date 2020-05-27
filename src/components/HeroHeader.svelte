@@ -94,7 +94,7 @@
         <ContactForm />
       </div>
       <div class="hero-img-wrapper col-12 col-md-7">
-        <img class="hero-img" src="hero-header-img.png" alt="Hero Header" />
+        <img class="hero-img" src="img/hero-header-img.png" alt="Hero Header" />
       </div>
     </div>
   </div>
