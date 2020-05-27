@@ -48,6 +48,7 @@
     margin-top: 0;
     margin-bottom: 20px;
     color: #166bef;
+    line-height: 1.4;
   }
 
   .faq__item-answer {
