@@ -1,6 +1,7 @@
 {
   "name": "Skygear Auth",
   "short_name": "Skygear Auth",
+  "start_url": "./",
   "icons": [
     {
       "src": "img/icons/android-chrome-192x192.png",
