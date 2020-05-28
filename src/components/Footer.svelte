@@ -78,35 +78,34 @@
         <span class="sitemap-title">Learn</span>
         <ul class="sitemap-list">
           <li>
-            <a>Blog</a>
-
+            <a href=".">Blog</a>
           </li>
           <li>
-            <a>Demo Projects</a>
+            <a href=".">Demo Projects</a>
           </li>
           <li>
-            <a>Documentation</a>
+            <a href=".">Documentation</a>
           </li>
           <li>
-            <a>Tutorials</a>
+            <a href=".">Tutorials</a>
           </li>
           <li>
-            <a>Terms of Services</a>
+            <a href=".">Terms of Services</a>
           </li>
           <li>
-            <a>Our Promises</a>
+            <a href=".">Our Promises</a>
           </li>
           <li>
-            <a>Acceptable Use Policy</a>
+            <a href=".">Acceptable Use Policy</a>
           </li>
           <li>
-            <a>Data Privacy Policy</a>
+            <a href=".">Data Privacy Policy</a>
           </li>
           <li>
-            <a>Service Level Agreement</a>
+            <a href=".">Service Level Agreement</a>
           </li>
           <li>
-            <a>Security</a>
+            <a href=".">Security</a>
           </li>
         </ul>
       </div>
@@ -114,13 +113,13 @@
         <span class="sitemap-title">Company</span>
         <ul class="sitemap-list">
           <li>
-            <a>Team</a>
+            <a href=".">Team</a>
           </li>
           <li>
-            <a>Contact</a>
+            <a href=".">Contact</a>
           </li>
           <li>
-            <a>Jobs</a>
+            <a href=".">Jobs</a>
           </li>
         </ul>
       </div>
@@ -128,16 +127,16 @@
         <span class="sitemap-title">Connect</span>
         <ul class="sitemap-list">
           <li>
-            <a>Twitter</a>
+            <a href=".">Twitter</a>
           </li>
           <li>
-            <a>Facebook</a>
+            <a href=".">Facebook</a>
           </li>
           <li>
-            <a>Github</a>
+            <a href=".">Github</a>
           </li>
           <li>
-            <a>Discourse</a>
+            <a href=".">Discourse</a>
           </li>
         </ul>
       </div>

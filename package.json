@@ -13,7 +13,7 @@
     "format": "prettier --write \"src/**/*.{js,html,svelte,css,scss}\"",
     "check-format": "prettier --list-different \"src/**/*.{js,html,svelte,css,scss}\"",
     "lint": "npm run lint:js && npm run lint:css",
-    "lint:js": "eslint \"src/**/*.svelte\"",
+    "lint:js": "eslint \"src/**/*.svelte\" --max-warnings=0",
     "lint:css": "stylelint \"src/**/*.{svelte,css}\""
   },
   "dependencies": {
@@ -54,6 +54,7 @@
     "rollup-plugin-terser": "5.3.0",
     "sapper": "0.27.13",
     "stylelint": "13.5.0",
+    "stylelint-csstree-validator": "1.8.0",
     "stylelint-no-unsupported-browser-features": "4.0.0",
     "svelte": "3.22.3",
     "svelte-preprocess": "3.7.4"
@@ -69,11 +70,15 @@
   ],
   "stylelint": {
     "plugins": [
-      "stylelint-no-unsupported-browser-features"
+      "stylelint-no-unsupported-browser-features",
+      "stylelint-csstree-validator"
     ],
     "rules": {
-      "plugin/no-unsupported-browser-features": true
+      "plugin/no-unsupported-browser-features": [true, {
+        "ignore": ["flexbox", "outline"]
+      }],
+      "csstree/validator": true
     },
-    "defaultSeverity": "warning"
+    "defaultSeverity": "error"
   }
 }

@@ -219,6 +219,7 @@
       background: hsla(0, 0%, 100%, 0.95);
       list-style-type: none;
       border-right: 1px solid #e8e8e8;
+      /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
       min-height: calc(100vh + 100px);
       transform-origin: 0 0;
       transform: translate(-100%);
@@ -241,7 +242,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="nav__logo-wrapper col-6 col-sm-6 col-md-3">
-        <a href="">
+        <a href=".">
           <img
             class="nav__logo-img"
             src="img/header-logo.png"
@@ -263,7 +264,11 @@
               {/each}
             </ul>
           </div>
-          <a class="nav__action-btn">Talk to Us</a>
+          <a
+            href="https://oursky.us2.list-manage.com/subscribe/post?u=34db69ee3e01fe49e12302054&amp;id=78e15b4a2a"
+            class="nav__action-btn">
+            Talk to Us
+          </a>
         </nav>
       </div>
     </div>

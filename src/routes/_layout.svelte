@@ -1,13 +1,10 @@
 <script>
   import Nav from "../components/Nav.svelte";
   import Footer from "../components/Footer.svelte";
-  import "../components/GlobalCSS.svelte";
-
-  export let segment;
 </script>
 
-<style>
-
+<style global src="../styles/global.css">
+  /* For information about these style tag attributes: https://github.com/sveltejs/svelte-preprocess#features */
 </style>
 
 <Nav />
