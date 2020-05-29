@@ -1,6 +1,6 @@
 {
   "name": "auth-landing",
-  "description": "Landing page for Skygear Auth",
+  "description": "Landing page for Authgear",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",

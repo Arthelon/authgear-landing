@@ -86,7 +86,7 @@
     <div class="row">
       <div class="col-12">
         <h1 class="code-sample__title">
-          Integrate Skygear Auth in Any Application in Just 5 Minutes!
+          Integrate Authgear in Any Application in Just 5 Minutes!
         </h1>
       </div>
     </div>
@@ -99,7 +99,7 @@
           <img
             class="code-sample__img"
             src="ui-demo.png"
-            alt="UI Demo of Skygear Auth SSO" />
+            alt="UI Demo of Authgear SSO" />
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@
 </style>
 
 <svelte:head>
-  <title>Skygear Auth</title>
+  <title>Authgear</title>
 </svelte:head>
 
 <HeroHeader />

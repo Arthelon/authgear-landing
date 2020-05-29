@@ -56,7 +56,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
-        <h1 class="cta__title">Try Skygear Auth. Its awesome.</h1>
+        <h1 class="cta__title">Try Authgear. Its awesome.</h1>
       </div>
     </div>
     <div class="row">
