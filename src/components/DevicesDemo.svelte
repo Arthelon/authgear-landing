@@ -25,7 +25,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .devices-demo__img-wrapper {
       padding-left: 43px;
       padding-right: 65px;

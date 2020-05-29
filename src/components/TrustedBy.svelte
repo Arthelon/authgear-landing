@@ -48,7 +48,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .trustedby {
       padding-top: 25px;
       padding-bottom: 80px;

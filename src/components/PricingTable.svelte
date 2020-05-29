@@ -65,7 +65,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .pricing-table {
       padding-top: 30px;
       padding-bottom: 30px;

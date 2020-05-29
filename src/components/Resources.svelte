@@ -55,7 +55,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .resources {
       padding-top: 30px;
       padding-bottom: 30px;
