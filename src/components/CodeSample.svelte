@@ -44,6 +44,7 @@
 
   .code-sample__img {
     max-width: 420px;
+    width: 100%;
     height: auto;
     display: inline-block;
     vertical-align: top;
