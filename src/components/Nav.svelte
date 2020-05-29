@@ -26,8 +26,9 @@
   }
 
   .nav__logo-img {
-    height: auto;
-    width: 170px;
+    flex-grow: 0;
+    width: auto;
+    height: 38px;
     border: 0;
     vertical-align: middle;
   }
@@ -187,11 +188,7 @@
     }
 
     .nav__logo-img {
-      width: 110px;
-      height: auto;
-    }
-
-    .nav__logo-img {
+      height: 26px;
       margin-left: 20px;
     }
 
