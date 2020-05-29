@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-  <title>Pricing - Skygear Auth</title>
+  <title>Pricing - Authgear</title>
 </svelte:head>
 <PricingHeader />
 <PricingTable />

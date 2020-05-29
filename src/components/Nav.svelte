@@ -246,7 +246,7 @@
           <img
             class="nav__logo-img"
             src="img/header-logo.png"
-            alt="Skygear Auth Logo" />
+            alt="Authgear Logo" />
         </a>
       </div>
       <div class="col-6 col-sm-6 col-md-9">

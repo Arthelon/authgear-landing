@@ -39,6 +39,6 @@
     <img
       class="devices-demo__img"
       src="img/devices-demo.png"
-      alt="Demo of Skygear Auth on Mobile and Desktop devices" />
+      alt="Demo of Authgear on Mobile and Desktop devices" />
   </div>
 </section>

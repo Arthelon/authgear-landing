@@ -1,6 +1,6 @@
 # auth-landing ![CI Status](https://github.com/SkygearIO/auth-landing/workflows/auth-landing%20CI/badge.svg?branch=master&event=push)
 
-Landing page for [Skygear](https://skygear.io/) Auth. This repo is based off svelte's [sappler boilerplate](https://github.com/sveltejs/sapper-template/tree/rollup) so for more information look there.
+Landing page for Authgear. This repo is based off svelte's [sappler boilerplate](https://github.com/sveltejs/sapper-template/tree/rollup) so for more information look there.
 
 Staging site can be found here: https://skygeario.github.io/auth-landing/
 
