@@ -21,7 +21,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .pricing__header__title {
       padding-left: 18px;
       padding-right: 18px;

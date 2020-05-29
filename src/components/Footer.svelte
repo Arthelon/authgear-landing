@@ -52,7 +52,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     img.footer-logo {
       width: 115px;
     }

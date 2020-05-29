@@ -68,7 +68,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .container-fluid {
       padding-left: 18px;
       padding-right: 18px;

@@ -149,7 +149,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 992px) {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
     .container-fluid {
       padding-right: 45px;
       padding-left: 45px;
@@ -166,7 +166,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .container-fluid {
       padding-right: 10px;
       padding-left: 10px;
