@@ -14,11 +14,7 @@
 
   .hero-img {
     max-width: 100%;
-  }
-
-  .hero-img-wrapper {
-    display: flex;
-    justify-content: flex-end;
+    float: right;
   }
 
   .tagline h1 {
@@ -93,7 +89,7 @@
         </p>
         <ContactForm />
       </div>
-      <div class="hero-img-wrapper col-12 col-md-7">
+      <div class="col-12 col-md-7">
         <img class="hero-img" src="img/hero-header-img.png" alt="Hero Header" />
       </div>
     </div>
